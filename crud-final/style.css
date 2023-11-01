@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .8em 10em;
+    background-color: #F9F9F9;
+    box-shadow: 0 0 5px 2px #757575;
+
+    position: relative;
+    z-index: 10;
+}
+
+.title{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2192FF;
+}
+
+.form-container{
+    background-color: #fff;
+    z-index: 1;
+    position: absolute;
+    top: -350px;
+    width: 100%;
+    transition: top 0.5s;
+}
+
+.form-container button{
+    position: absolute;
+    right: 50px;
+    padding: 0.5em;
+}
+
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+input{
+    width: 100%;
+    margin: 1em auto;
+    padding: 0.5em 1em;
+    border: 2px solid #2192FF;
+    border-radius: 4px;
+}
+
+input[type=submit]{
+    border: #757575;
+}
+
+.table-container{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    margin: 2em auto;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    /* width: auto; */
+}
+
+tbody tr:nth-child(odd){
+    background-color: #2194ff6d;
+    color: #404040;
+}
+tbody tr:nth-child(even){
+    color: #2194ff;
+}
+
+thead{
+    background-color: #2192FF;
+    color: #F9F9F9;
+}
+
+.btn{
+    border: none;
+    background-color: #2192FF;
+    color: #fff;
+    padding: 0.5em 0.8em;
+    border-radius: 4px;
+    margin: 0 0.2em;
+}
+
+.current-page {
+    background-color: #007bff; /* blue color, change as needed */
+    color: #fff; /* text color, change as needed */
+  }
+
+  .table-img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+#pagination-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagination-container button{
+    margin: auto 0.2em;
+    padding: 0 0.4em;
+    border: none;
+    border-radius: 4px;
+}
+

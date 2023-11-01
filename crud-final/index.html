@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD System</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        
+    <div class="navbar">
+        <a href="#" class="title">CRUD System</a>
+        <button class="btn" onclick="addPersonForm()">Add</button>
+    </div>
+
+       <div class="form-container" id="form-container">
+        <button onclick="closeForm()">X</button>
+        <form id="person-form">
+            <input type="text" id="name" name="name" placeholder="Name*">
+            <input type="number" id="age" name="age" placeholder="Age*" >
+            <input type="text" id="city" name="city" placeholder="City*" >
+            <input type="text" id="address" name="address" placeholder="Address" >
+            <input type="file" id="image" name="image">
+            <input type="submit" id="submit" value="Submit">
+          </form>
+          
+       </div>
+        <br>
+        <div id="table-container">
+          <select name="" id="my-select">
+            <option value="2">2</option>
+            <option value="5">5</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+          </select>
+            <table id="data-table" class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>City</th>
+                  <th>Address</th>
+                  <th>Image</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="table-body"> 
+              </tbody>
+            </table>
+          </div>
+          <div id="pagination-container">
+            <button id="page-prev">Prev</button>
+              <div id="pagination-pages"></div>
+            <button id="page-next">Next</button>
+          </div>
+
+      
+
+    <script src="index.js"></script>
+</body>
+</html>
